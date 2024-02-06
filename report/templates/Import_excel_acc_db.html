@@ -1,0 +1,23 @@
+{% block content %}
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+ 
+    <div class="row">
+        <div class="col-md-6 col-xs-32">
+          <div class="x_panel">
+            <div class="x_title">
+              <h2>Импортировать банковские выписки</h2>
+              <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+              <div class="col-md-8 col-sm-32 col-xs-32 form-group">
+              </div>
+                    <input type="file" name="*" class="form-control">
+                             <button type="submit" class="btn btn-success" >Импорт выписок</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  </form>   
+{% endblock %}
